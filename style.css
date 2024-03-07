@@ -20,11 +20,14 @@ body{
 
 .logo{
     font-size: 24px;
+    color: #f9faf8;
 }
 
 .logo-and-links{
     display:flex;
     justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
 }
 
 .hero-header{
@@ -35,7 +38,12 @@ body{
 
 .hero-text{
     display:flex;
-    
+
+
+}
+
+.subtext{
+    margin-bottom: 16px;
 }
 
 
