@@ -13,11 +13,34 @@ body{
     color: white;
     display:flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .hero{
     margin-right: 30px;
+    width: 300px;
+
+}
+
+
+.hero-header{
+    font-size: 48px;
+    font-weight: 800;
+    color: #f9faf8;
     
+}
+
+.hero-text{
+    display:flex;
+
+    flex: 1;
+    
+    margin-bottom: 40px;
+}
+
+
+.subtext{
+    margin-bottom: 16px;
 }
 
 .logo{
@@ -30,27 +53,11 @@ body{
     align-items: center;
     padding: 10px 0px;
     margin-bottom: 40px;
-    justify-content: space-between;
-
-
+    gap: 300px;
 }
 
-.hero-header{
-    font-size: 48px;
-    font-weight: 800;
-    color: #f9faf8;
-    
-}
-
-.hero-text{
-    display:flex;
-    margin-bottom: 40px;
-}
-
-
-
-.subtext{
-    margin-bottom: 16px;
+.jelly-img{
+    flex-basis: 0;
 }
 
 /* The random information section */
@@ -71,8 +78,8 @@ body{
 
 .container{
     display:flex;
-    gap: 100px;
     text-align: center;
+    flex-wrap: wrap;
     
 }
 .image {
@@ -84,8 +91,41 @@ body{
 
 .info {
     max-width: 150px;
+    margin: 30px;
     
 }
+
+
+
+/* Quote section */
+
+
+.quote{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background:#e5e7eb;
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    padding: 100px;
+}
+.quoted-person{
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+    font-size: 20px;
+}
+
+/* Call to action section*/
+
+
+
+
+
+
+
 
 
 
@@ -106,6 +146,10 @@ button {
 
 button.sign-up-action{
     border: 1px solid white;
+}
+
+img{
+    max-width: 100%;
 }
 
 ul{
