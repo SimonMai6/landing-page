@@ -1,5 +1,5 @@
 body{
-    font-family: Roboto, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -14,12 +14,12 @@ body{
     display:flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px 0px;
 }
 
 .hero{
     margin-right: 30px;
-    width: 300px;
-
+    width:550px;
 }
 
 
@@ -32,9 +32,6 @@ body{
 
 .hero-text{
     display:flex;
-
-    flex: 1;
-    
     margin-bottom: 40px;
 }
 
@@ -51,23 +48,25 @@ body{
 .logo-and-links{
     display:flex;
     align-items: center;
-    padding: 10px 0px;
     margin-bottom: 40px;
-    gap: 300px;
+    justify-content: space-between;
 }
 
-.jelly-img{
-    flex-basis: 0;
+.hero-text, .logo-and-links{
+    padding: 0px 10px;
 }
+
+
+.jelly-img{
+    max-width: 100%;
+}
+
+
 
 /* The random information section */
 .body{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin: 30px 0px;
-
+    text-align: center;
 }
 
 .random-info {
@@ -76,12 +75,12 @@ body{
     margin-bottom: 30px;
 }
 
-.container{
+ .container{
     display:flex;
-    text-align: center;
+    justify-content: center;
     flex-wrap: wrap;
-    
-}
+ }
+
 .image {
     border:2px solid #3882f6;
     border-radius: 6px;
@@ -93,7 +92,7 @@ body{
     max-width: 150px;
     margin: 30px;
     
-}
+} 
 
 
 
@@ -104,15 +103,20 @@ body{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     background:#e5e7eb;
     font-size: 36px;
     font-style: italic;
     color: #1f2937;
-    padding: 100px;
+    padding: 80px;
+    font-weight: 100; 
+
 }
+
+
+  
 .quoted-person{
-    font-weight: bold;
+    font-weight: 800;
     font-style: normal;
     text-align: right;
     font-size: 20px;
@@ -120,6 +124,31 @@ body{
 
 /* Call to action section*/
 
+.call-to-action{
+    display: flex;
+    justify-content: center;
+    color:#f9faf8;
+    padding: 40px 0px;
+}
+
+.border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3882f6;
+    padding: 20px 80px;
+    border-radius: 6px;
+    gap: 100px;
+}
+
+.action-text{
+    font-size: 18px;
+}
+
+.action-title{
+    font-weight: bold;
+    font-size: 20px;
+}
 
 
 
@@ -127,9 +156,11 @@ body{
 
 
 
+.width-management{
+    max-width:1000px;
 
-
-
+    
+}
 
 
 button {
@@ -139,17 +170,17 @@ button {
     border: none;
     text-align: center;
     cursor: pointer;
-    padding: 6px 16px;
+    padding: 6px 20px;
     border-radius: 6px;
-    cursor: pointer;
 }
 
 button.sign-up-action{
-    border: 1px solid white;
-}
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
 
-img{
-    max-width: 100%;
 }
 
 ul{
